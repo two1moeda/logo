@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Player HTML dengan hls.js</title>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+  <video id="video" width="640" height="auto"></video>
+  <script>
+    if(Hls.isSupported()) {
+        var video = document.getElementById('video');
+        var hls = new Hls();
+        var m3u8Url = 'http://198.16.100.90:8278/Sctv/playlist.m3u8?tid=MEAE5576803555768035&ct=19249&tsum=22cd08338943a038eb9a5bcf2ff7cba3';
+        hls.loadSource(m3u8Url);
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED,function() {
+          video.play();
+        });
+    }
+  </script>
+</body>
+</html>
