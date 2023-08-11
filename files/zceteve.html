@@ -10,7 +10,7 @@
     if(Hls.isSupported()) {
         var video = document.getElementById('video');
         var hls = new Hls();
-        var m3u8Url = 'http://198.16.100.90:8278/Sctv/playlist.m3u8?tid=MEAE5576803555768035&ct=19249&tsum=22cd08338943a038eb9a5bcf2ff7cba3';
+        var m3u8Url = 'http://edge.linknetott.swiftserve.com/channelgroup3/cg331production/ch8/index.m3u8';
         hls.loadSource(m3u8Url);
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED,function() {
