@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contoh Pemutaran HLS</title>
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-
-    <!-- Atau jika Anda ingin mengaktifkan fitur lainnya -->
-    <!-- <meta http-equiv="Permissions-Policy" content="interest-cohort=(none)"> -->
+    <title>Pemutar HLS M3U8</title>
 </head>
 <body>
-    <video controls>
-        <source src="http://edge.linknetott.swiftserve.com/channelgroup3/cg357production/ch395/01.m3u8" type="application/x-mpegurl">
-        Browser Anda tidak mendukung pemutaran video.
-    </video>
+    <video id="hls-player" controls autoplay></video>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+        var video = document.getElementById('hls-player');
+        var hls = new Hls();
+
+        if (Hls.isSupported()) {
+            hls.loadSource('https://raw.githubusercontent.com/bmeidch/ytlok/cd0da4ff423dcd07f4ec0b9eba074fc70fb0e0e8/indosiar.m3u8'); // Ganti dengan URL M3U8 Anda
+            hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                video.play();
+            });
+        }
+        else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = 'https://raw.githubusercontent.com/bmeidch/ytlok/cd0da4ff423dcd07f4ec0b9eba074fc70fb0e0e8/indosiar.m3u8'; // Ganti dengan URL M3U8 Anda
+            video.addEventListener('loadedmetadata', function () {
+                video.play();
+            });
+        }
+    </script>
 </body>
 </html>
