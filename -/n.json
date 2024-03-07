@@ -1,0 +1,22 @@
+{
+  "manifests": [
+    {
+      "uri": "https://ztnr.rtve.es/ztnr/1688877.m3u8",
+      "type": "hls",
+      "title": "La 1",
+      "image": "https://i.imgur.com/o9T8uzT.png"
+    },
+    {
+      "uri": "https://ztnr.rtve.es/ztnr/1688885.m3u8",
+      "type": "hls",
+      "title": "La 2",
+      "image": "https://i.ibb.co/V2RyY0D/LA2.png"
+    },
+    {
+      "uri": "https://ott.zapitv.com/live/eds_c2/test/dash_live_enc/test.mpd",
+      "type": "dash",
+      "title": "Antena 3",
+      "image": "https://i.imgur.com/qO4vsck.png"
+    }
+  ]
+}
