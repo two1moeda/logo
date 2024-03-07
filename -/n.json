@@ -3,7 +3,7 @@
     {
       "name": "Dazn LaLiga",
     "image": "https://i.imgur.com/zlC5JTt.png",
-    "categ": "Deportes",
+    "type": "dash",
     "kid": "82f8e2a17dac44c0a18f660479349c59",
     "key": "1b144f73e6fefe91cd05f850e2b589d0",
     "url": "https://dcf-ak-livedazn.akamaized.net/dashrdm/dazn-linear-043/stream.mpd"
@@ -11,7 +11,7 @@
   {
     "name": "Dazn LaLiga (Backup)",
     "image": "https://i.imgur.com/zlC5JTt.png",
-    "categ": "Deportes",
+    "type": "dash",,
     "kid": "43d1c3b25207ff38b22ccfe17d302367",
     "key": "7b1f85f6e81059473b114c16a25c829a",
     "url": "https://live.ll.ww.aiv-cdn.net/OTTB/dub-nitro/live/clients/dash/enc/wjgklbtvhh/out/v1/659736a1e24c40e4865a80ffd75e7de7/cenc.mpd"
@@ -19,7 +19,7 @@
   {
     "name": "Dazn 1 ",
     "image": "https://i.imgur.com/3LvZ7mz.png",
-    "categ": "Deportes",
+    "type": "dash",,
     "kid": "82f8e2a17dac44c0a18f660479349c59",
     "key": "1b144f73e6fefe91cd05f850e2b589d0",
     "url": "https://dcf-ak-livedazn.akamaized.net/dashrdm/dazn-linear-037/stream.mpd?p=web"
@@ -27,7 +27,7 @@
   {
     "name": "Dazn 1 (Backup)",
     "image": "https://i.imgur.com/3LvZ7mz.png",
-    "categ": "Deportes",
+    "type": "dash",
     "kid": "44dd9cd370b08a868ead115fe84ecfde",
     "key": "bff19ab0a51cf14e848389b152913fd0",
     "url": "https://ottb.live.cf.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/bmnelo5c7a/out/v1/3ce2cdc4589f46189322bd3717c77957/cenc.mpd"
@@ -35,7 +35,7 @@
   {
     "name": "Dazn 2",
     "image": "https://i.imgur.com/NpGZEke.png",
-    "categ": "Deportes",
+    "type": "dash",
     "kid": "82f8e2a17dac44c0a18f660479349c59",
     "key": "1b144f73e6fefe91cd05f850e2b589d0",
     "url": "https://dcf-ak-livedazn.akamaized.net/dashrdm/dazn-linear-038/stream.mpd?p=web"
