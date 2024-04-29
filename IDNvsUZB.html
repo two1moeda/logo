@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #videoContainer {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+    <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+    <script>
+        jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+    </script>
+</head>
+<body>
+    <div id="player"></div>
+    <script>
+        var playerInstance = jwplayer("player");
+
+        playerInstance.setup({
+            playlist: [{
+                sources: [{
+                    default: false,
+                    type: "mpd",
+                    file: "https://dsgtq5sngxkde.cloudfront.net/live/eds/Sportstar4/sa_dash_vmx/Sportstar4.mpd",
+                    drm: {
+                        clearkey: {
+                            key: "a07dc4d86f51db7195f4b7e2abe9d9e8",
+                            keyId: "b81b1942c65f35547ced1bff074206a5"
+                        }
+                    }
+                }]
+            }],
+            width: "auto",
+            height: "100%",
+            autostart: true,
+            stretching: "exactfit",
+            fullscreen: true,
+            cast: {},
+            sharing: {}
+        });
+    </script>
+</body>
+</html>
